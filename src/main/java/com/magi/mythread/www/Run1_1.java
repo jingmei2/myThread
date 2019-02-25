@@ -1,17 +1,17 @@
 package com.magi.mythread.www;
 
-import com.magi.mythread.test.MyThread1;
+import com.magi.mythread.test.MyThread1_1;
 
 import java.util.Random;
 
 /**
  * @author magi
  */
-public class Run1 {
+public class Run1_1 {
     private static Random random = new Random();
 
     public static void main(String[] args) {
-        MyThread1 myThread1 = new MyThread1();
+        MyThread1_1 myThread1 = new MyThread1_1();
         myThread1.setName("myThread1");
         //myThread1.start();
         myThread1.run();
@@ -29,7 +29,7 @@ public class Run1 {
 
     }
 
-//      1.在子线程执行了 start 之后,说明线程准备就绪,等待调用线程的 run 方法,是交由给 Thread 随机安排任务的执行
+//      1.在子线程执行了 start 之后,说明线程准备就绪,等待调用线程的 run 方法,线程规划器,是交由给 Thread 随机安排任务的执行
 //      2.在执行了 thread.run 方法的时候,其实是调用了主线程 mian 的 run 方法,此时代码执行是同步的,顺序的
 
 //    run=myThread1

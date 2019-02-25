@@ -1,12 +1,12 @@
 package com.magi.mythread.test;
 
-import java.io.PrintWriter;
-import java.util.Random;
 
 /**
  * @author magi
+ * 继承 Thread 类
+ *
  */
-public class MyThread1 extends Thread{
+public class MyThread1_1 extends Thread{
     @Override
     public void run() {
 //        super.run();
